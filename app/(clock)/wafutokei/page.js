@@ -1,12 +1,12 @@
 'use client'
 import Link from 'next/link';
-import { Noto_Sans_JP } from "next/font/google";
+import { Klee_One, Noto_Sans_JP } from "next/font/google";
 import { Wafu } from '@/app/components/wafu/page';
 import { Footer } from '@/app/components/footer/page';
 import CopytoClipBoard from '@/app/components/button/page';
 import { useState,useEffect } from 'react';
 
-const inter = Noto_Sans_JP({ subsets: ["latin"], weight : '400' });
+const inter = Klee_One({ subsets: ["latin"], weight : '400' })
 
 export default function Home() {
   return(
@@ -43,7 +43,7 @@ const Block = ({direction}) =>{
     setHostname(window.location.hostname)
   }, [])
   return(
-    <div className='flex flex-col'>
+    <div className='flex flex-col hover:bg-green-400 p-4 rounded-lg'>
       <Link href = {link}>
         <Wafu direction={direction}/>
       </Link>
