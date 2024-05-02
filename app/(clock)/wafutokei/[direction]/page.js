@@ -7,6 +7,7 @@ export const metadata = {
 };
 
 export default function Home({params}) {
+  console.log(params)
   return(
     <main >
       <Wafu direction={params.direction}/>
