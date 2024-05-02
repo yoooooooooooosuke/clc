@@ -4,6 +4,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import { Wafu } from '@/app/components/wafu/page';
 import { Footer } from '@/app/components/footer/page';
 import CopytoClipBoard from '@/app/components/button/page';
+import { useState,useEffect } from 'react';
 
 const inter = Noto_Sans_JP({ subsets: ["latin"], weight : '400' });
 
@@ -36,8 +37,11 @@ export default function Home() {
 }
 
 const Block = ({direction}) =>{
+  const [host,setHostname] = useState('')
   const link = '/wafutokei/' + direction
-  const host = window.location.hostname
+  useEffect(() => {
+    setHostname(window.location.hostname)
+  }, [])
   return(
     <div className='flex flex-col'>
       <Link href = {link}>
