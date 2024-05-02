@@ -83,3 +83,5 @@ export const Wafu = ({direction}) => {
     </div>
   )
 }
+
+export default Wafu

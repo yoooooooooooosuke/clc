@@ -5,3 +5,5 @@ export const Header1 = () => {
     </div>
   )
 }
+
+export default Header1
