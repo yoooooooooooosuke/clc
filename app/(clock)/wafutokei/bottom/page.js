@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { Wafu } from '@/app/components/wafu/page';
 
 export const metadata = {
@@ -6,10 +5,10 @@ export const metadata = {
   description: "",
 };
 
-export default function Home({params}) {
+export default function Home() {
   return(
     <main >
-      <Wafu direction={params.direction}/>
+      <Wafu direction={'bottom'}/>
     </main>
   )
 }
