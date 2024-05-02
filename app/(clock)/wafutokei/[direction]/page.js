@@ -1,4 +1,4 @@
-
+export const runtime = 'edge';
 import { Wafu } from '@/app/components/wafu/page';
 
 export const metadata = {
