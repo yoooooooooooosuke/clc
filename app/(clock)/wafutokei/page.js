@@ -37,12 +37,13 @@ export default function Home() {
 
 const Block = ({direction}) =>{
   const link = '/wafutokei/' + direction
+  const host = window.location.hostname
   return(
     <div className='flex flex-col'>
       <Link href = {link}>
         <Wafu direction={direction}/>
       </Link>
-      <CopytoClipBoard  url={link}/>
+      <CopytoClipBoard  url={host + link}/>
     </div>
   )
 }
