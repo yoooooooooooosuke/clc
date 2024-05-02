@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 import { Wafu } from '@/app/components/wafu/page';
 import { Footer } from '@/app/components/footer/page';
 import CopytoClipBoard from '@/app/components/button/page';
